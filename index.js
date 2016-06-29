@@ -19,7 +19,6 @@ var Player = function(id){
 		x:250,
 		y:250,
 		id:id,
-		number:"" + Math.floor(10 * Math.random()),
 		pressingRight:false,
 		pressingLeft:false,
 		pressingUp:false,
@@ -74,7 +73,6 @@ setInterval(function(){
 		pack.push({
 			x:player.x,
 			y:player.y,
-			number:player.number
 		});		
 	}
 	for(var i in SOCKET_LIST){
